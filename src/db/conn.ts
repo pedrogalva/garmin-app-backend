@@ -1,3 +1,3 @@
 import { Sequelize } from "sequelize";
 
-export const sequelizeConn = new Sequelize("sqlite::memory:");
+export const dbConnector = new Sequelize("sqlite::memory:");

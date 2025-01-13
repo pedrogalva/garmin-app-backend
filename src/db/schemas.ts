@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
-import { sequelizeConn } from "./conn";
+import { dbConnector } from "./conn";
 
-const Client = sequelizeConn.define("clients", {
+export const Client = dbConnector.define("clients", {
   userGarminLogin: { type: DataTypes.STRING, field: "user_garmin_login" },
   userGarminHashedPassword: { type: DataTypes.STRING },
   salt: {
